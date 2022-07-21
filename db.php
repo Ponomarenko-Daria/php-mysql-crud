@@ -2,10 +2,9 @@
 session_start();
 
 $conn = mysqli_connect(
-  'localhost',
-  'root',
-  'password123',
-  'php_mysql_crud'
-) or die(mysqli_erro($mysqli));
-
+  getenv("MYSQL_SERVER"),
+  getenv("MYSQL_USER"),
+  getenv("MYSQL_ROOT_PASSWORD"),
+  getenv("MYSQL_DATABASE"),
+) or die(mysqli_error($mysqli));
 ?>
