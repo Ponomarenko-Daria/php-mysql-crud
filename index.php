@@ -1,3 +1,5 @@
+<?php include("db.php"); ?>
+
 <?php include('includes/header.php'); ?>
 
 <main class="container p-4">
